@@ -1,0 +1,83 @@
+.post-home {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 60% 30%;
+    grid-template-areas:
+        "hd"
+        "main"
+        "ft";
+    margin: auto;
+    width: 50%;
+}
+
+header {
+    grid-area: hd;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: ft;
+}
+
+.footer-content {
+    background-color: #f8f8f8;
+    height: 130px;
+    margin-top: 120px;
+    text-align: center;
+    border-top: 2px solid #eaeaea;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.blog-title {
+    display: inline-block;
+    margin-left: 30%;
+}
+
+.posts-container {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas: 
+        "one two"
+        "three four"
+        "five six";
+
+    grid-gap: 4%;
+    
+    
+}
+
+.post-card {
+    border: 3px solid grey;
+    padding-bottom: 5%;
+    padding-left: 6%;
+}
+
+.post-1 {
+    grid-area: one;
+}
+
+.post-2 {
+    grid-area: two;
+}
+
+.post-3 {
+    grid-area: three;   
+}
+
+.post-4 {
+    grid-area: four;
+}
+
+.post-5 {
+    grid-area: five;
+}
+
+.post-6 {
+    grid-area: six;
+}
