@@ -4,7 +4,7 @@
 .blog-content {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 10% 80% 10%;
+    grid-template-rows: 5% 85% 10%;
     margin: auto;
     width: 50%;
     grid-template-areas:
@@ -23,7 +23,7 @@ main {
 
 footer {
     grid-area: ft;
-    margin-top: 5%
+    margin-top: 8%
 }
 
 .blog-title {
@@ -74,4 +74,41 @@ footer {
 .blog-image {
     float: right;
     border: 2px solid black;
+}
+
+figcaption {
+    text-align: center;
+}
+
+@media (max-width: 1400px) {
+
+    .blog-content {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 5% 95%;
+        grid-template-areas:
+        "hd"
+        "main"
+    }
+
+    .about, .archieves {
+        display: none;
+    }
+
+    .post-content {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        grid-template-areas: "content";
+    }
+
+    .post-main-content {
+        grid-area: content;
+    }
+
+    footer {
+        display: none;
+    }
+    
+
 }

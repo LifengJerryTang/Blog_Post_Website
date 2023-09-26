@@ -5,7 +5,7 @@
 .post-home {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 10% 60% 30%;
+    grid-template-rows: 8% 62% 30%;
     grid-template-areas:
         "hd"
         "main"
@@ -45,6 +45,37 @@ footer {
     
 }
 
+@media (max-width: 1200px) {
+
+    .post-home {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 5% 75% 20%;
+        grid-template-areas:
+            "hd"
+            "main"
+            "ft";
+    }
+    
+    .posts-container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 16% 16% 16% 16% 16% 16%;
+        grid-template-areas: 
+            "one"
+            "two"
+            "three"
+            "four"
+            "five"
+            "six";
+        
+    }
+
+    footer {
+        display: none;
+    }
+}
+
 .post-card {
     border: 3px solid grey;
     padding-bottom: 5%;
@@ -77,4 +108,8 @@ footer {
 
 .post-6 {
     grid-area: six;
+}
+
+a {
+    color: white;
 }
